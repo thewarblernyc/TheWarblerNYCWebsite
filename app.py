@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 # initialize flask "app" (that's what the documentations call it :/) 
 app = Flask(__name__)
+app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 @app.route("/")
 def index():
@@ -18,4 +19,4 @@ def contact():
 
 @app.route("/about")
 def about():
-    return render_template("about.html")
+    return render_template("about.html") 
