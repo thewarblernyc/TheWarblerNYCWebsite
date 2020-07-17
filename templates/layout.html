@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="environmental non-profit" />
+    <meta name="keyword" content="environmental, student led, non-profit" />
+    <meta name="author" content="thewarblernyc" />
+    <title>The Warbler Org</title>
+  </head>
+  <body>
+    <nav>
+      <img src="../static/img/logo.svg" alt="" class="logo" />
+      <div class="nav-wrap">
+        <ul class="nav-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">Resources</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main">
+      {% block main %}{% endblock %}
+    </div>
+
+    <footer id="footer-mobile">
+      <h2>CONNECT WITH US!</h2>
+      <div class="buttons"></div>
+      <span class="email"></span>
+      <img src="../static/img/logo.svg" alt="" class="logo" />
+    </footer>
+    <footer id="footer-desktop"></footer>
+  </body>
+</html>
