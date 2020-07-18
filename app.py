@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-# initialize flask "app" (that's what the documentations call it :/) 
 app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
@@ -15,8 +14,10 @@ def resource():
 
 @app.route("/contact")
 def contact():
+    """Contacts page for the Warbler Org."""
     return render_template("contact.html")
 
 @app.route("/about")
 def about():
+    """About page for the Warbler Org."""
     return render_template("about.html") 
