@@ -1,0 +1,50 @@
+/* #nav-mobile {
+
+} */
+
+/* this is desktop*/
+#nav-desktop {
+    background: #2B2C3A;
+    color: #FFDD85;
+    box-sizing: border-box;
+    padding: .5rem 0;
+    display: none;
+    filter: drop-shadow(0 2.5px 2.5px black);
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
+.nav-desktop-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75rem;
+    margin: auto;
+}
+
+#nav-desktop img {
+    padding-top: .5rem;
+    /* height: 20%; */
+}
+
+#nav-desktop a {
+    color: #FFDD85;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+}
+#nav-desktop li {
+    display: inline;
+    padding: 0 0 0 60px;
+}
+
+@media only screen and (min-width: 1024px) {
+    #nav-desktop {
+        display: block;
+    }
+
+    #nav-mobile {
+        display: none;
+    }
+}

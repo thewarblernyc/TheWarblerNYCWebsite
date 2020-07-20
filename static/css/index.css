@@ -1,0 +1,63 @@
+/* color: #FF750F; */
+/* color: #FFDD85; */
+/* color: #2B2C3A; */
+
+
+
+
+.page-section {
+    /* width: 100%; */
+    padding: 3rem;
+    max-width: 65rem;
+    margin: auto;
+}
+
+.btn {
+    margin: .2rem;
+}
+
+.btn-content {
+    width: 7rem;
+    padding: .5rem;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.index .background {
+    background-image: url(../img/bg_bird.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.joinOurCause {
+    text-align: center;
+    background-image: url(../img/Mission_Statement_Background.png);
+    /* background-size: cover; */
+}
+
+.joinOurCause .title {
+    font-size: 2rem;
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    color:  #FF750F ;
+    margin-bottom: 1rem;
+}
+
+.joinOurCause .textBody {
+    color: black;
+    font-size: 1.5rem;
+    background-size: cover;
+} 
+ 
+.joinOurCause .btn-content {
+    background-color: #FFDD85 ;
+}

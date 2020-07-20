@@ -1,0 +1,99 @@
+/* styles for footer on mobile devices */
+#footer-mobile {
+    padding: 2rem 3rem;
+    background-color: #2B2C3A;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-mobile h2 {
+    color: #FF750F;
+    font-family: 'Comfortaa';
+}
+
+.footer-mobile-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    margin: auto;
+    padding: 0 0 1rem 0;
+}
+
+.footer-mobile-email {
+    color: #FFDD85;
+    padding: 0 0 1rem 0;  
+}
+
+.footer-mobile-logo {
+    position: relative;
+}
+
+/* styles for footer on desktop devices */
+#footer-desktop {
+    /* position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%; */
+    display: none;
+    background-color: #2B2C3A;
+    color: #FF750F;
+    width: 100%;
+    padding: 2.5rem 0;
+    box-sizing: border-box;
+}
+
+.footer-desktop-container {
+    display: flex;
+    /* padding: 2.5rem; */
+    flex-direction: column;
+    max-width: 75rem;
+    margin: auto;
+}
+
+.footer-desktop-rowThick {
+    display: flex;
+}
+
+.rowThick-column {
+    padding-right: 5rem;
+}
+
+.footer-desktop-rowThick h2 {
+    font-family: 'Comfortaa';
+    text-decoration: underline;
+    color: #FFDD85;
+    font-size: 1.25rem;
+}
+
+.footer-desktop-rowThick a,
+.footer-desktop-rowThick span {
+    text-decoration: none;
+    color: #FF750F;
+    font-size: 1.10rem;
+}
+
+.footer-desktop-rowThin {
+    display: flex;
+    padding: 3rem 0 0 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-desktop-buttons a {
+    padding: 1rem;
+}
+
+/* media query to toggle b/w styles according to screen width */
+@media only screen and (min-width: 1024px) {
+    #footer-mobile {
+        display: none;
+    }
+    #footer-desktop {
+        display: block;
+    }
+}
+
+.main {
+    min-height: calc(100vh - 325px);
+}
