@@ -31,15 +31,24 @@
 
 /* styles for footer on desktop devices */
 #footer-desktop {
+    /* position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%; */
     display: none;
     background-color: #2B2C3A;
     color: #FF750F;
+    width: 100%;
+    padding: 2.5rem 0;
+    box-sizing: border-box;
 }
 
 .footer-desktop-container {
     display: flex;
-    padding: 2.5rem;
+    /* padding: 2.5rem; */
     flex-direction: column;
+    max-width: 75rem;
+    margin: auto;
 }
 
 .footer-desktop-rowThick {
@@ -54,14 +63,14 @@
     font-family: 'Comfortaa';
     text-decoration: underline;
     color: #FFDD85;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
 }
 
 .footer-desktop-rowThick a,
 .footer-desktop-rowThick span {
     text-decoration: none;
     color: #FF750F;
-    font-size: 1.45rem;
+    font-size: 1.10rem;
 }
 
 .footer-desktop-rowThin {
@@ -83,4 +92,8 @@
     #footer-desktop {
         display: block;
     }
+}
+
+.main {
+    min-height: calc(100vh - 325px);
 }

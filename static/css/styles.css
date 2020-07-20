@@ -1,4 +1,6 @@
 @import "footer.css";
+@import "nav.css";
+@import "index.css";
 
 body {
     margin: 0;
