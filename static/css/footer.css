@@ -1,3 +1,4 @@
+/* styles for footer on mobile devices */
 #footer-mobile {
     padding: 2rem 3rem;
     background-color: #2B2C3A;
@@ -8,7 +9,7 @@
 
 #footer-mobile h2 {
     color: #FF750F;
-    font-weight: 400;
+    font-family: 'Comfortaa';
 }
 
 .footer-mobile-buttons {
@@ -28,3 +29,58 @@
     position: relative;
 }
 
+/* styles for footer on desktop devices */
+#footer-desktop {
+    display: none;
+    background-color: #2B2C3A;
+    color: #FF750F;
+}
+
+.footer-desktop-container {
+    display: flex;
+    padding: 2.5rem;
+    flex-direction: column;
+}
+
+.footer-desktop-rowThick {
+    display: flex;
+}
+
+.rowThick-column {
+    padding-right: 5rem;
+}
+
+.footer-desktop-rowThick h2 {
+    font-family: 'Comfortaa';
+    text-decoration: underline;
+    color: #FFDD85;
+    font-size: 1.75rem;
+}
+
+.footer-desktop-rowThick a,
+.footer-desktop-rowThick span {
+    text-decoration: none;
+    color: #FF750F;
+    font-size: 1.45rem;
+}
+
+.footer-desktop-rowThin {
+    display: flex;
+    padding: 3rem 0 0 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-desktop-buttons a {
+    padding: 1rem;
+}
+
+/* media query to toggle b/w styles according to screen width */
+@media only screen and (min-width: 1024px) {
+    #footer-mobile {
+        display: none;
+    }
+    #footer-desktop {
+        display: block;
+    }
+}
