@@ -12,6 +12,18 @@
     margin: auto;
 }
 
+@media (min-width: 700px) {
+    .page-section {
+        padding: 5rem;
+    }
+}
+
+.textBody {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1rem;
+}
+
 .btn {
     margin: .2rem;
 }
@@ -23,10 +35,22 @@
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: inherit;
+    border: none;
+    outline: none;
 }
 
+a:hover {
+    text-decoration: none !important;
+    color: inherit;
+    border: inherit !important;
+    outline: none !important;  
+}
+
+a:active {
+    outline: none;
+}
 
 
 .index .background {
@@ -54,10 +78,31 @@ a {
 
 .joinOurCause .textBody {
     color: black;
-    font-size: 1.5rem;
-    background-size: cover;
+    font-size: 1.4rem;
 } 
  
 .joinOurCause .btn-content {
     background-color: #FFDD85 ;
+    font-size: 1.2rem;
+}
+
+.joinOurCause .btn-content:hover {
+    background-color: inherit ;
+    outline: 0.2rem solid #FFDD85;
+    transition: 0.1s ease-in;
+    color: #FF750F;
+}
+
+.recentPublications {
+    background-color: #FFDD85;
+    text-align: center;
+    /* max-width: 65rem; */
+}
+
+.recentPublications .title {
+    font-size: 2rem;
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    color: #2B2C3 ;
+    margin-bottom: 1rem;
 }
