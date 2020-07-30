@@ -16,15 +16,32 @@
     <link rel="stylesheet" href="../static/css/styles.css" />
   </head>
   <body>
+    
     <nav id="nav-mobile">
-      <img src="" alt="" />
+      <input type="checkbox" class="nav-checkbox" id="nav-toggle">
+
+      <label for="nav-toggle" class="nav-button">
+          <span class="nav-icon"></span>
+      </label>
+      <div class="nav-mobile-wrap">
+        <ul class="nav-mobile-list">
+          <li><a href="/"><img src="../static/img/icons/home.png" alt="icon"><span>Home</span></a></li>
+          <li><a href="/resource"><img src="../static/img/icons/resources.png" alt="icon"><span>Resources</span></a></li>
+          <li><a href="/contact"><img src="../static/img/icons/contactUs.png" alt="icon"><span>Contact</span></a></li>
+          <li><a href="/about"><img src="../static/img/icons/about.png" alt="icon"><span>About</span></a></li>
+        </ul>
+      </div>
+      <div class="nav-outer-bg"></div>
+      <div class="nav-mobile-logo-wrap">
+        <img src="../static/img/logo.svg" alt="" class="nav-mobile-logo">
+      </div>
     </nav>
 
     <nav id="nav-desktop">
       <div class="nav-desktop-container">
         <img src="../static/img/logo_combined.png" alt="" class="logo" />
-        <div class="nav-wrap">
-          <ul class="nav-list"> 
+        <div class="nav-desktop-wrap">
+          <ul class="nav-desktop-list"> 
             <li><a href="/">Home</a></li>
             <li><a href="/resource">Resources</a></li>
             <li><a href="/contact">Contact</a></li>
