@@ -1,7 +1,19 @@
 .title {
-    font-size: 2rem;
-    font-family: 'Comfortaa';
-    font-weight: bold;
-    color:  #FF750F ;
-    margin-bottom: 1rem;
+  font-size: 3rem;
+  padding: 2rem;
+  font-family: "Comfortaa";
+  font-weight: bold;
+  color: #ff750f;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttons a {
+  padding: 0.5rem 0.75rem;
+  background-color: #ffdd85;
+  font-weight: 600;
 }

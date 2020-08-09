@@ -2,108 +2,102 @@
 /* color: #FFDD85; */
 /* color: #2B2C3A; */
 
-
-
-
 .page-section {
-    /* width: 100%; */
-    padding: 3rem;
-    max-width: 65rem;
-    margin: auto;
+  /* width: 100%; */
+  padding: 3rem;
+  max-width: 65rem;
+  margin: auto;
 }
 
 @media (min-width: 700px) {
-    .page-section {
-        padding: 5rem;
-    }
+  .page-section {
+    padding: 5rem;
+  }
 }
 
 .textBody {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 1rem;
 }
 
 .btn {
-    margin: .2rem;
+  margin: 0.2rem;
 }
 
 .btn-content {
-    width: 7rem;
-    padding: .5rem;
-    margin: auto;
+  width: 7rem;
+  padding: 0.5rem;
+  margin: auto;
 }
 
 a {
-    text-decoration: none !important;
-    color: inherit;
-    border: none;
-    outline: none;
+  text-decoration: none !important;
+  color: inherit;
+  border: none;
+  outline: none;
 }
 
 a:hover {
-    text-decoration: none !important;
-    color: inherit;
-    border: inherit !important;
-    outline: none !important;  
+  text-decoration: none !important;
+  color: inherit;
+  border: inherit !important;
+  outline: none !important;
 }
 
 a:active {
-    outline: none;
+  outline: none;
 }
-
 
 .index .background {
-    background-image: url(../img/bg_bird.jpg);
-    background-size: cover;
-    background-position: top;
-    height: 100vh;
-    overflow: hidden;
+  background-image: url(../img/bg_bird.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  overflow: hidden;
 }
 
-
 .joinOurCause {
-    text-align: center;
-    background-image: url(../img/Mission_Statement_Background.png);
-    /* background-size: cover; */
+  text-align: center;
+  background-image: url(../img/Mission_Statement_Background.png);
+  /* background-size: cover; */
 }
 
 .joinOurCause .title {
-    font-size: 2rem;
-    font-family: 'Comfortaa';
-    font-weight: bold;
-    color:  #FF750F ;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  font-family: "Comfortaa";
+  font-weight: bold;
+  color: #ff750f;
+  margin-bottom: 1rem;
 }
 
 .joinOurCause .textBody {
-    color: black;
-    font-size: 1.4rem;
-} 
- 
+  color: black;
+  font-size: 1.4rem;
+}
+
 .joinOurCause .btn-content {
-    background-color: #FFDD85 ;
-    font-size: 1.2rem;
+  background-color: #ffdd85;
+  font-size: 1.2rem;
 }
 
 .joinOurCause .btn-content:hover {
-    background-color: inherit ;
-    outline: 0.2rem solid #FFDD85;
-    transition: 0.1s ease-in;
-    color: #FF750F;
+  background-color: inherit;
+  outline: 0.2rem solid #ffdd85;
+  transition: 0.1s ease-in;
+  color: #ff750f;
 }
 
 .recentPublications {
-    background-color: #FFDD85;
-    text-align: center;
-    /* max-width: 65rem; */
+  background-color: #ffdd85;
+  text-align: center;
+  /* max-width: 65rem; */
 }
 
 .recentPublications .title {
-    font-size: 2rem;
-    font-family: 'Comfortaa';
-    font-weight: bold;
-    color: #2B2C3 ;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  font-family: "Comfortaa";
+  font-weight: bold;
+  color: #2B2C3;
+  margin-bottom: 1rem;
 }
-
