@@ -55,6 +55,17 @@ a:active {
   background-position: top;
   height: 100vh;
   overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+
+@media (min-width: 1024px) {
+  .joinOurCause {
+    position: absolute;
+    /* background: white; */
+    background-image: none !important;
+    top: 5%;
+  }
 }
 
 .joinOurCause {

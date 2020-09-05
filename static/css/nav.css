@@ -1,5 +1,6 @@
 /* mobile nav bar */
 #nav-mobile {
+  z-index: 2;
   transition: all 0.5s ease;
   background-color: #2b2c3a;
   height: 6rem;
@@ -237,6 +238,7 @@
 /* >>>>><<<<< */
 /* this is desktop*/
 #nav-desktop {
+  z-index: 2;
   background: #2b2c3a;
   color: #ffdd85;
   box-sizing: border-box;
