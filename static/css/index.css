@@ -52,7 +52,7 @@ a:active {
 .index .background {
   background-image: url(../img/bg_bird.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: 80%;
   height: 100vh;
   overflow: hidden;
   position: relative;
@@ -62,9 +62,15 @@ a:active {
 @media (min-width: 1024px) {
   .joinOurCause {
     position: absolute;
-    /* background: white; */
+    background: rgba(255, 255, 255, 0.85);
     background-image: none !important;
-    top: 5%;
+    padding: 0;
+    top: 60%;
+    left: 5%;
+    width: 50%;
+  }
+  .joinOurCause > .page-section {
+    padding: 2rem;
   }
 }
 

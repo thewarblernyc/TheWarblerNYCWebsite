@@ -170,6 +170,10 @@
   transition-delay: 0.15s;
 }
 
+.nav-mobile-list li:nth-child(5) span {
+  transition-delay: 0.2s;
+}
+
 .nav-mobile-list li:nth-child(1) img {
   transition-delay: 0s;
 }
@@ -186,6 +190,10 @@
   transition-delay: 0.15s;
 }
 
+.nav-mobile-list li:nth-child(5) img {
+  transition-delay: 0.2s;
+}
+
 .nav-outer-bg {
   position: fixed;
   height: 100%;
@@ -197,7 +205,7 @@
 }
 
 .nav-checkbox:checked ~ .nav-button {
-  height: 16rem;
+  height: 19.5rem;
   box-shadow: 0 0 5rem black;
 }
 

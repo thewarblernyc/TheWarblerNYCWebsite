@@ -25,3 +25,5 @@ def contact():
 def about():
     """About page for the Warbler Org."""
     return render_template("about.html")
+
+# app.run(host='0.0.0.0')
