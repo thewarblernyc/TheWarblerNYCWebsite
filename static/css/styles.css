@@ -1,11 +1,21 @@
 @import "footer.css";
 @import "nav.css";
+@import "contact.css";
 /* @import "index.css"; */
 /* @import "resource.css"; */
+
+* {
+    scroll-behavior: smooth;
+    /* we have the articles from the editors
+    so ill work on getting those up while i want you to work on styling the contacts
+    is that fine with you? */
+}
+
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Actor';
+    /* font-family: "Comfortaa"; */
     overflow-x: hidden;
 }

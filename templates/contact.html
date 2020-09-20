@@ -2,18 +2,47 @@
 
 {% block main %}
     <link rel="stylesheet" href="../static/css/contact.css">
-    <h1>Let's Connect</h1>
-    <form action="">
-        <label for="name">Name</label>
-        <input type="text" name="name">
+    <section class="contact page-content">
 
-        <label for="email">Email</label>
-        <input type="email" name="email">
-        
-        <label for="subject">Subject</label>
-        <input type="text" name="subject">
-
-        <label for="message">Message</label>
-        <input type="text" name="message">
-    </form>
+        <header class="contact-header page-section">
+          <div class="contact-header-text">Let's Connect</div> 
+        </header>
+    
+        <div class="contact-text-statement page-section">
+          Whether you have a question, want to learn more about us, join our team, get featured, or anything else, 
+          our team is ready to answer all your questions.
+        </div>
+    
+        <div class="contact-info page-section">
+    
+          <div class="contact-info-box">
+            <div class="contact-form">
+              <form action="contact.php" method="post">
+                <div class="elem-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{1,60} required>
+                </div>
+                <div class="elem-group">
+                  <label for="email">Your E-mail</label>
+                  <input type="text" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+                </div>
+                <div class="elem-group">
+                  <label for="title">Subject</label>
+                  <input type="text" id="title" name="visitor_subject" required placeholder="Subject">
+                </div>
+                <div class="elem-group">
+                  <label for="message">Write your message</label>
+                  <textarea  rows="5" style="min-width: 100%; max-width: 100%;" id="message" name="visitor_message"
+                    placeholder="Message .." required></textarea>
+                </div>
+                <button class="btn" type="submit">Send Message</button>
+              </form>
+    
+    
+            </div>
+          </div>
+    
+        </div>
+    
+      </section>
 {% endblock %}

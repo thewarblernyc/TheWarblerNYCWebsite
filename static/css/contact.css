@@ -1,0 +1,192 @@
+.page-section {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .page-section {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+   .page-section {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .textBody {
+    margin: auto;
+    max-width: 60rem;
+  }
+}
+
+.contact .btn {
+  background-color: #FF750F;
+  color: white;
+  opacity: 1; 
+  border: none;
+  height: auto;
+  width: auto;
+  -webkit-appearance: none;
+  opacity: 1;
+  padding: .75rem;  
+  margin-top: 1.5rem;
+  font-style: normal;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Actor";
+  font-weight: normal;
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:active {
+  color: black;
+  transition: 0.15s ease-in;
+}
+
+.contact-header {
+  text-align: center;
+}
+
+.contact-header-text {
+  font-family: "Actor";
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2b2c3a; 
+}
+
+@media (min-width: 700px) {
+  .contact-header-text {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-header-text {
+    font-size: 6rem;
+  }
+}
+
+.contact-text-statement {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "comfortaa";
+  color: black;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  max-width: 60rem;
+}
+
+@media (min-width: 700px) {
+  .contact-text-statement {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-text-statement {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+    .contact-text-statement {
+      padding: 0;
+      margin: auto;
+    }
+  }
+
+.contact-info {
+  font-size: 1rem;
+  font-family: "Actor";
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+  .contact-info {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-info {
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .contact-info {
+    font-size: 1.5rem;
+
+    padding: 0rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: auto;
+    max-width: 60rem;
+  }
+}
+
+
+/* Form  */
+.controls {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: .5rem;
+  text-align: left;
+}
+
+.elem-group {
+  text-align: left;
+}
+
+.name {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: .5rem;
+}
+
+input,
+textarea,
+optgroup,
+select {
+  width: 100%;
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: "Actor";
+  font-style: italic;
+}
+
+label {
+  line-height: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: .75rem;
+  letter-spacing: 0.1rem;
+}
+
+@media (min-width: 1024px) {
+  label {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 2.5rem;
+  }
+}
+
+#form_message {
+  margin-bottom: 1rem;
+}

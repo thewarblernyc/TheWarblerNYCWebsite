@@ -205,7 +205,7 @@
 }
 
 .nav-checkbox:checked ~ .nav-button {
-  height: 19.5rem;
+  height: 16rem;
   box-shadow: 0 0 5rem black;
 }
 
