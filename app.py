@@ -1,9 +1,12 @@
-from flask import Flask, render_template
-# import json
+from flask import Flask, render_template, request, redirect
+import psycopg2, os
+
+DATABASE_URL = os.environ['DATABASE_URL']
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+cur = conn.cursor()
 
 app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
-# publications = json.load("data/publication.json")
 
 @app.route("/")
 def home():
@@ -17,10 +20,24 @@ def resource():
     return render_template("publication.html")
 
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
     """Contacts page for the Warbler Org."""
-    return render_template("contact.html")
+    if request.method == "POST":
+        name = request.form.get("visitor_name")
+        email = request.form.get("visitor_email")
+        subject = request.form.get("visitor_subject")
+        message = request.form.get("visitor_message")
+
+        cur.execute("""INSERT INTO visitors (name, email, subject, message)
+                       VALUES (%s, %s, %s, %s);
+                    """, 
+                    (name, email, subject, message))
+        conn.commit()
+
+        return redirect("/contact")
+    else:
+        return render_template("contact.html")
 
 
 @app.route("/about")
@@ -28,4 +45,5 @@ def about():
     """About page for the Warbler Org."""
     return render_template("about.html")
 
-# app.run(host='0.0.0.0')
+if __name__ == "__main__":
+    app.run()
