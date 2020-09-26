@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request, redirect
 import psycopg2, os
 
-DATABASE_URL = os.environ['DATABASE_URL']
+***REMOVED***
+# DATABASE_URL = os.environ['DATABASE_URL']
 conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 cur = conn.cursor()
 
@@ -29,8 +30,8 @@ def contact():
         subject = request.form.get("visitor_subject")
         message = request.form.get("visitor_message")
 
-        cur.execute("""INSERT INTO visitors (name, email, subject, message)
-                       VALUES (%s, %s, %s, %s);
+        cur.execute("""INSERT INTO contacts (name, email, subject, message, time)
+                       VALUES (%s, %s, %s, %s, CURRENT_TIMESTAMP);
                     """, 
                     (name, email, subject, message))
         conn.commit()
