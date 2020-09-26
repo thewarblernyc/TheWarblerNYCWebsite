@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect
-import psycopg2, os
+import psycopg2
+import os
 
 DATABASE_URL = os.environ['DATABASE_URL']
 conn = psycopg2.connect(DATABASE_URL, sslmode='require')
@@ -7,6 +8,7 @@ cur = conn.cursor()
 
 app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
+
 
 @app.route("/")
 def home():
@@ -31,7 +33,7 @@ def contact():
 
         cur.execute("""INSERT INTO contacts (name, email, subject, message, time)
                        VALUES (%s, %s, %s, %s, CURRENT_TIMESTAMP);
-                    """, 
+                    """,
                     (name, email, subject, message))
         conn.commit()
 
@@ -44,6 +46,7 @@ def contact():
 def about():
     """About page for the Warbler Org."""
     return render_template("about.html")
+
 
 if __name__ == "__main__":
     app.run()
