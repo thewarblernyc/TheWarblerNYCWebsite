@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "**This webpage is currently under heavy development.**",
   "main": "index.js",
-  "start": {
-    "postinstall": "cd server && npm install"
+  "scripts": {
+    "postinstall": "cd static && npm install"
   },
   "repository": {
     "type": "git",
