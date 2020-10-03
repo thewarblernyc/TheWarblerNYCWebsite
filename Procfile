@@ -1,1 +1,1 @@
-web: npm --prefix ./static install & gunicorn app:app
+web: gunicorn app:app

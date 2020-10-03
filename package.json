@@ -1,0 +1,20 @@
+{
+  "name": "TheWarblerNYCWebsite",
+  "version": "1.0.0",
+  "description": "**This webpage is currently under heavy development.**",
+  "main": "index.js",
+  "start": {
+    "postinstall": "cd server && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thewarblernyc/TheWarblerNYCWebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thewarblernyc/TheWarblerNYCWebsite/issues"
+  },
+  "homepage": "https://github.com/thewarblernyc/TheWarblerNYCWebsite#readme"
+}
