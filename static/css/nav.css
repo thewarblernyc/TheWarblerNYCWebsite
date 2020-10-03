@@ -1,6 +1,6 @@
 /* mobile nav bar */
 #nav-mobile {
-  z-index: 2;
+  z-index: 10000;
   transition: all 0.5s ease;
   background-color: #2b2c3a;
   height: 6rem;
@@ -25,7 +25,7 @@
 
 .nav-button {
   position: fixed;
-  z-index: 2;
+  z-index: 10000;
   top: 1rem;
   left: 1rem;
   width: 4rem;
@@ -95,7 +95,7 @@
 .nav-mobile-wrap {
   position: fixed;
   padding: 4rem 0 0 0;
-  z-index: 2;
+  z-index: 10000;
   pointer-events: none;
 }
 
@@ -246,7 +246,7 @@
 /* >>>>><<<<< */
 /* this is desktop*/
 #nav-desktop {
-  z-index: 2;
+  z-index: 10000;
   background: #2b2c3a;
   color: #ffdd85;
   box-sizing: border-box;

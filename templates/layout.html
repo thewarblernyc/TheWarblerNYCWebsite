@@ -39,13 +39,7 @@
               ></a
             >
           </li>
-          <!-- <li>
-            <a href="/resource"
-              ><img src="../static/img/icons/resources.png" alt="icon" /><span
-                >Resources</span
-              ></a
-            >
-          </li> -->
+
           <li>
             <a href="/contact"
               ><img src="../static/img/icons/contactUs.png" alt="icon" /><span
@@ -70,12 +64,13 @@
 
     <nav id="nav-desktop">
       <div class="nav-desktop-container">
-        <img src="../static/img/logo_combined.png" alt="" class="logo" />
+        <a href="/">
+          <img src="../static/img/logo_combined.png" alt="" class="logo" />
+        </a>
         <div class="nav-desktop-wrap">
           <ul class="nav-desktop-list">
             <li><a href="/">Home</a></li>
             <li><a href="https://the-warbler-org.myshopify.com/">Shop</a></li>
-            <!-- <li><a href="/resource">Resources</a></li> -->
             <li><a href="/contact">Contact</a></li>
             <li><a href="/about">About</a></li>
           </ul>
@@ -83,7 +78,7 @@
       </div>
     </nav>
 
-    <div class="main">
+    <div class="main transition-fade" id="swup">
       {% block main %}{% endblock %}
     </div>
 
@@ -125,5 +120,14 @@
         </div>
       </div>
     </footer>
+    <script src="../static/node_modules/swup/dist/swup.min.js"></script>
+    <script src="../static/node_modules/@swup/overlay-theme/dist/SwupOverlayTheme.min.js"></script>
+    <script>
+      const swup = new Swup({
+        plugins: [new SwupOverlayTheme({
+          color: '#2B2C3A'
+        })]
+      });
+    </script>
   </body>
 </html>

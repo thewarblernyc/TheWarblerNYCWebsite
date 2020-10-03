@@ -1,13 +1,21 @@
 from flask import Flask, render_template, request, redirect
 import psycopg2
 import os
+import mammoth
+import json
 
+# configure flask app
+app = Flask(__name__)
+app.config["TEMPLATES_AUTO_RELOAD"] = True
+
+# Connect to Heroku Postgres Database
 DATABASE_URL = os.environ['DATABASE_URL']
 conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 cur = conn.cursor()
 
-app = Flask(__name__)
-app.config["TEMPLATES_AUTO_RELOAD"] = True
+# Load json file containing publication data
+with open('data/publication.json') as F:
+    publications_data = json.load(F)["publications"]
 
 
 @app.route("/")
@@ -16,10 +24,22 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/publication")
-def resource():
+@app.route("/publications")
+def showPublications():
     """Publications page for the Warbler Org."""
-    return render_template("publication.html")
+    # return render_template("publications.html")
+    redirect("/")
+
+@app.route("/publications/<name>")
+def fetchPublication(name):
+    """Fetch a publication from the `data` folder"""
+    for publication in publications_data:
+        if publication["code"] == name:
+            with open(os.path.join("data", publication["code"]+".docx"), "rb") as doc:
+                pub_text = mammoth.convert_to_html(doc)
+                return render_template("publication.html", pub_text=pub_text.value)
+    # return redirect("/publications")
+    return redirect("/")
 
 
 @app.route("/contact", methods=["GET", "POST"])
