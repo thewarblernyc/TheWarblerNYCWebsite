@@ -8,8 +8,8 @@
     <meta name="author" content="thewarblernyc" />
 
     <title>The Warbler Org</title>
-    
-    <link rel="icon" href="../static/img/lonely_bird.jpg" type="image/jpg">
+
+    <link rel="icon" href="../static/img/lonely_bird.jpg" type="image/jpg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Actor&family=Comfortaa:wght@400;700&display=swap"
       rel="stylesheet"
@@ -120,14 +120,8 @@
         </div>
       </div>
     </footer>
-    <script src="../static/node_modules/swup/dist/swup.min.js"></script>
-    <script src="../static/node_modules/@swup/overlay-theme/dist/SwupOverlayTheme.min.js"></script>
-    <script>
-      const swup = new Swup({
-        plugins: [new SwupOverlayTheme({
-          color: '#2B2C3A'
-        })]
-      });
-    </script>
+    <script src="{{ url_for('static', filename='node_modules/swup/dist/swup.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='node_modules/@swup/overlay-theme/dist/SwupOverlayTheme.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
   </body>
 </html>
