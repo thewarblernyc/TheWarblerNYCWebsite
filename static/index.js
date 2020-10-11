@@ -10,6 +10,9 @@ const swup = new Swup({
 swup.on("animationInStart", () => {
   document.documentElement.scrollTop = 0;
   document.getElementById('nav-toggle').checked = false;
+});
+
+swup.on("pageView", () => {
   (function () {
     var i,
       e,
@@ -22,4 +25,4 @@ swup.on("animationInStart", () => {
     e = d.getElementsByTagName(s)[0];
     e.parentNode.insertBefore(i, e);
   })();
-});
+})

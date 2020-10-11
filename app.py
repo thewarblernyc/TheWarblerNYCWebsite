@@ -27,8 +27,8 @@ def home():
 @app.route("/publications")
 def showPublications():
     """Publications page for the Warbler Org."""
-    return render_template("publications.html")
-    # redirect("/")
+    # return render_template("publications.html")
+    return redirect("/")
 
 
 @app.route("/publications/<name>")
@@ -46,8 +46,8 @@ def fetchPublication(name):
                                         pub_title=pub_title,
                                         pub_writers=pub_writers,
                                         pub_editors=pub_editors)
-    return redirect("/publications")
-    # return redirect("/")
+    # return redirect("/publications")
+    return redirect("/")
 
 
 @app.route("/contact", methods=["GET", "POST"])
