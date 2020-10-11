@@ -1,0 +1,46 @@
+.page-section {
+  /* width: 100%; */
+  padding: 3rem;
+  max-width: 65rem;
+  margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.25rem;
+    font-family: "Comfortaa";
+    font-weight: bold;
+    color: #ff750f;
+  }
+  
+  h2 {
+    color: #ff750f;
+    text-align: center;
+    font-family: "Comfortaa";
+    /* font-size: 1.75rem; */
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.publicationHead {
+  background: #FFDD85;
+}
+
+.publicationHead h1 {
+  color: #2B2C3A;
+}
+
+
+@media (min-width: 700px) {
+  .page-section {
+    padding: 5rem;
+  }
+  h1 {
+      font-size: 2.75rem;
+  }
+  p {
+      font-size: 1.5rem;
+  }
+}

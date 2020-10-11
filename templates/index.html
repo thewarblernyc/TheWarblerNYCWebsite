@@ -1,5 +1,5 @@
 {% extends "layout.html" %} {% block main %}
-<link rel="stylesheet" href="../static/css/index.css">
+<link rel="stylesheet" href="../static/css/index.css" />
 <div class="page-content index">
   <section class="background">
     <div class="textBody"></div>
@@ -7,31 +7,49 @@
 
   <section class="joinOurCause">
     <div class="page-section">
-      <div class="title">
-        Join Our Cause
-      </div>
+      <div class="title">Join Our Cause</div>
       <div class="textBody">
         The Warbler aims to promote environmentally-friendly actions that will
         positively impact the ecosystem and improve quality of life for city
         residents.
-        <a href="#publication" class="btn_home">
-          <div class="btn-content">
-            Read More
-          </div>
+        <a href="/publications" class="btn_home">
+          <div class="btn-content">Read More</div>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="instagram">
+    <div class="page-section">
+      <div class="title">Our Instagram</div>
+      <div id="curator-feed-default-feed-layout">
+        <a href="https://curator.io" target="_blank" class="crt-logo crt-tag"
+          >Powered by Curator.io</a
+        >
       </div>
     </div>
   </section>
 
   <section class="recentPublications" id="publication">
     <div class="page-section">
-      <div class="title">
-        Recent Publications
-      </div>
-      <div class="textBody">
-        Coming soon!
-      </div>
+      <div class="title">Recent Publications</div>
+      <div class="textBody">Coming soon!</div>
     </div>
   </section>
 </div>
+<script type="text/javascript">
+  /* curator-feed-default-feed-layout */
+  (function () {
+    var i,
+      e,
+      d = document,
+      s = "script";
+    i = d.createElement("script");
+    i.async = 1;
+    i.src =
+      "https://cdn.curator.io/published/6b6062cf-6084-4cff-b779-b3169e306108.js";
+    e = d.getElementsByTagName(s)[0];
+    e.parentNode.insertBefore(i, e);
+  })();
+</script>
 {% endblock %}

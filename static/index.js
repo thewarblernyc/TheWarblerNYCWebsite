@@ -10,4 +10,16 @@ const swup = new Swup({
 swup.on("animationInStart", () => {
   document.documentElement.scrollTop = 0;
   document.getElementById('nav-toggle').checked = false;
+  (function () {
+    var i,
+      e,
+      d = document,
+      s = "script";
+    i = d.createElement("script");
+    i.async = 1;
+    i.src =
+      "https://cdn.curator.io/published/6b6062cf-6084-4cff-b779-b3169e306108.js";
+    e = d.getElementsByTagName(s)[0];
+    e.parentNode.insertBefore(i, e);
+  })();
 });

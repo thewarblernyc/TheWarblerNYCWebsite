@@ -1,0 +1,64 @@
+.page-section {
+  /* width: 100%; */
+  padding: 3rem;
+  max-width: 65rem;
+  margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.25rem;
+    font-family: "Comfortaa";
+    font-weight: bold;
+    color: #ff750f;
+}
+
+h2 {
+    font-family: "Comfortaa";
+    font-weight: bold;
+    font-size: 1.75rem;
+    margin-top: 2.5rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.ourPublications {
+    background: #FFDD85;
+}
+
+.ourPublications h1 {
+    color: #2B2C3A;
+}
+
+.publicationsList {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto auto auto auto;
+}
+
+.page-section {
+  /* width: 100%; */
+  padding: 3rem;
+  max-width: 65rem;
+  margin: auto;
+}
+
+@media (min-width: 700px) {
+  .page-section {
+    padding: 5rem;
+  }
+  h1 {
+      font-size: 2.75rem;
+  }
+  p {
+      font-size: 1.5rem;
+  }
+}
+
+
+.grid-item {
+  background-color: #ff750f;
+  border: 1px solid blue;
+}

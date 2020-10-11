@@ -105,6 +105,23 @@ a:active {
   color: #ff750f;
 }
 
+.instagram {
+  background-color: #2B2C3A;
+}
+
+.instagram .title {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Comfortaa";
+  font-weight: bold;
+  color: #ff750f;
+  margin-bottom: 3rem;
+}
+
+.crt-tag {
+  color: #2B2C3A !important;
+}
+
 .recentPublications {
   background-color: #ffdd85;
   text-align: center;

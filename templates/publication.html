@@ -1,6 +1,17 @@
 {% extends "layout.html" %} {% block main %}
 <link rel="stylesheet" href="../static/css/publication.css">
 <div class="page-content publication">
-  {{ pub_text|safe }}
+  <section class="publicationHead">
+    <div class="page-section">
+      <h1>{{ pub_title }}</h1>
+      <h2>Written By: {{ pub_writers }}</h2>
+      <h2>Edited By: {{ pub_editors }}</h2>
+    </div>
+  </section>
+  <section class="publication">
+    <div class="page-section">
+      {{ pub_text|safe }}
+    </div>
+  </section>
 </div>
 {% endblock %}

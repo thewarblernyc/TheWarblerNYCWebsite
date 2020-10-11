@@ -27,8 +27,9 @@ def home():
 @app.route("/publications")
 def showPublications():
     """Publications page for the Warbler Org."""
-    # return render_template("publications.html")
-    redirect("/")
+    return render_template("publications.html")
+    # redirect("/")
+
 
 @app.route("/publications/<name>")
 def fetchPublication(name):
@@ -37,9 +38,16 @@ def fetchPublication(name):
         if publication["code"] == name:
             with open(os.path.join("data", publication["code"]+".docx"), "rb") as doc:
                 pub_text = mammoth.convert_to_html(doc)
-                return render_template("publication.html", pub_text=pub_text.value)
-    # return redirect("/publications")
-    return redirect("/")
+                pub_title = publication["title"]
+                pub_writers = ', '.join(publication["writers"])
+                pub_editors = ', '.join(publication["editors"])
+                return render_template("publication.html",
+                                        pub_text=pub_text.value,
+                                        pub_title=pub_title,
+                                        pub_writers=pub_writers,
+                                        pub_editors=pub_editors)
+    return redirect("/publications")
+    # return redirect("/")
 
 
 @app.route("/contact", methods=["GET", "POST"])
