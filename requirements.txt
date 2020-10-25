@@ -1,9 +1,10 @@
 click==7.1.2
+cobble==0.1.3
 Flask==1.1.2
+gunicorn==20.0.4
 itsdangerous==1.1.0
 Jinja2==2.11.2
+mammoth==1.4.12
 MarkupSafe==1.1.1
-Werkzeug==1.0.1
-gunicorn==19.9.0
 psycopg2-binary==2.8.6
-mammoth
+Werkzeug==1.0.1

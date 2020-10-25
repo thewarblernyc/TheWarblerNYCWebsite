@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@swup/overlay-theme": "^1.1.1",
+    "sass": "^1.27.0",
     "swup": "^2.0.11"
   }
 }

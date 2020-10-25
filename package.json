@@ -4,7 +4,7 @@
   "description": "**This webpage is currently under heavy development.**",
   "main": "index.js",
   "scripts": {
-    "postinstall": "cd static && npm install"
+    "postinstall": "cd static && npm install && sass scss/styles.scss css/all.css"
   },
   "repository": {
     "type": "git",

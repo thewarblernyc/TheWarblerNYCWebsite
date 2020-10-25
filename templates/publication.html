@@ -1,5 +1,4 @@
 {% extends "layout.html" %} {% block main %}
-<link rel="stylesheet" href="../static/css/publication.css">
 <div class="page-content publication">
   <section class="publicationHead">
     <div class="page-section">
@@ -9,9 +8,7 @@
     </div>
   </section>
   <section class="publication">
-    <div class="page-section">
-      {{ pub_text|safe }}
-    </div>
+    <div class="page-section">{{ pub_text|safe }}</div>
   </section>
 </div>
 {% endblock %}
